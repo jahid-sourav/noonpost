@@ -34,13 +34,6 @@ Route::post('/contact-submit',[
 ]);
 
 
-// Search Page Route
-Route::get('/search-result',[
-    'uses' => '\App\Http\Controllers\frontend\SearchController@index',
-    'as' => 'search-result',
-]);
-
-
 // Back-end
 Route::group(['middleware' => ['auth:sanctum', 'verified']], function(){
     Route::get('/dashboard',[
@@ -98,5 +91,11 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function(){
     Route::get('/blog-delete/{id}',[
         'uses' => '\App\Http\Controllers\admin\BlogController@blogDelete',
         'as' => 'blog-delete',
+    ]);
+
+    // Contact Manage
+    Route::get('/contact-manage',[
+        'uses' => '\App\Http\Controllers\admin\ContactController@contactManage',
+        'as' => 'contact-manage',
     ]);
 });

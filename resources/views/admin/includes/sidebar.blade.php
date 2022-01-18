@@ -51,7 +51,7 @@
                         <span data-key="t-components">Contact</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="">Manage Contact</a></li>
+                        <li><a href="{{ route('contact-manage') }}">Contact Manage</a></li>
                     </ul>
                 </li>
             </ul>
