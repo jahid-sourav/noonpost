@@ -39,12 +39,8 @@
         <div class="row align-items-baseline mb-20">
             <div class="col-lg-8 mt-30">
                 <div class="contact">
-                    <form action="" method="POST" id="main_contact_form" class="widget-form contact_form">
+                    <form action="{{ route('contact-submit') }}" method="POST" class="widget-form contact_form">
                         @csrf
-                        <h6>Feel free to contact any time.</h6>
-                        <div class="alert alert-success contact_msg" style="display: none" role="alert">
-                            Your message was sent successfully.
-                        </div>
                         <div class="form-group">
                             <input type="text" name="name" id="name" class="form-control" placeholder="Your Name*" required="required">
                         </div>

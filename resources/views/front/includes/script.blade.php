@@ -3,7 +3,7 @@
     <script src="{{ asset('/') }}assets/js/popper.min.js"></script>
     <script src="{{ asset('/') }}assets/js/bootstrap.min.js"></script>
     <!-- JS Plugins  -->
-    <script src="{{ asset('/') }}assets/js/ajax-contact.js"></script>
+    <script src="{{ asset('/') }}assets/js/toastr.min.js"></script>
     <script src="{{ asset('/') }}assets/js/owl.carousel.min.js"></script>
     <script src="{{ asset('/') }}assets/js/switch.js"></script>
     <!-- JS main  -->

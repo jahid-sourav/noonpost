@@ -28,6 +28,10 @@ Route::get('/contact',[
     'uses' => '\App\Http\Controllers\frontend\ContactController@index',
     'as' => 'contact',
 ]);
+Route::post('/contact-submit',[
+    'uses' => '\App\Http\Controllers\frontend\ContactController@contactSubmit',
+    'as' => 'contact-submit',
+]);
 
 
 // Search Page Route
